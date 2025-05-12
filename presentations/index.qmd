@@ -1,9 +1,10 @@
 --- 
 format: 
   revealjs:
+    author: Dawa Ometto
     theme: themes/uu.scss
     logo: images/UU_logo_2021_EN_RGB.png
-    footer: "Dawa Ometto"
+    footer: "https://edu.nl/7xtfr"
 ---
 
 # HPC Spring School {data-background-color="#FFCD00"}
@@ -19,12 +20,12 @@ Extended Introduction to SURF ResearchCloud
 - Part I: First steps
 - 10.30 Coffee break
 - Part II: Practice & closer look
-- 12.30: lunch
+- 12.30: Lunch
 - 13.30: Automating workflows using the Research Cloud API
 
 # Links
 
-- These slides:
+- These slides: [https://edu.nl/7xtfr](https://edu.nl/7xtfr)
 - [UU ResearchCloud documentation](https://utrechtuniversity.github.io/vre-docs/)
 - [SURF ResearchCloud wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/9798172/SURF+Research+Cloud)
 
