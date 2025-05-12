@@ -1,0 +1,103 @@
+--- 
+format: 
+  revealjs:
+    theme: themes/uu.scss
+    logo: images/UU_logo_2021_EN_RGB.png
+    footer: "Dawa Ometto"
+---
+
+# HPC Spring School {data-background-color="#FFCD00"}
+
+Extended Introduction to SURF ResearchCloud
+
+# Make sure you've accepted this invite!
+
+![](images/qr_sram.png)
+
+# Program
+
+- Part I: First steps
+- 10.30 Coffee break
+- Part II: Practice & closer look
+- 12.30: lunch
+- 13.30: Automating workflows using the Research Cloud API
+
+# Links
+
+- These slides:
+- [UU ResearchCloud documentation](https://utrechtuniversity.github.io/vre-docs/)
+- [SURF ResearchCloud wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/9798172/SURF+Research+Cloud)
+
+# What is ResearchCloud?
+
+Features / advantages
+
+## Different cloud resources
+
+Workspace
+  - transient, no permanent storage, no backup
+Storage
+  - permanent
+IP
+
+## Collaborative
+
+SRAM
+
+## Multiple infrastructures
+
+Different type of clouds
+Hardware availability
+
+## Funding
+
+Cost model
+  - PAUSE WORKSPACES
+Funding sources (very briefly)
+
+# Demo
+
+Verify that:
+
+- Everyone is in SRAM
+- Everyone has a wallet
+- Everyone has TOTP set up
+- Optional: if you want to use SSH, setup key
+- Everyone can login to an existing workspace
+
+# Exercise 1: Create a workspace with Storage
+
+Offer 2 or 3 different workspace types
+
+https://utrechtuniversity.github.io/vre-docs/docs/manuals/creating.html
+
+Plenary: log in to each others' workspace.
+
+Pause the workspace.
+
+# COFFEE BREAK 15 mins
+
+# Exercise 2: transfer data & reproducibility
+
+- Jupyter/RStudio Upload
+  - https://github.com/UtrechtUniversity/workshop-introduction-to-python/blob/main/book/solutions/afternoon_exercises_solutions.ipynb
+  - https://github.com/UtrechtUniversity/workshop-introduction-to-R-and-data
+- ResearchDrive
+
+https://utrechtuniversity.github.io/vre-docs/docs/manuals.html#data-transfer
+
+- Conda env + git
+
+# Catalog Items
+
+- Parameters
+- Interactive parameters
+
+# Exercise 3: custom CI, interactive parameters
+
+- Custom Packages
+
+Throw away workspace, do it again.
+
+# SANE demo (if time allows?)
+
