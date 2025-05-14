@@ -171,26 +171,15 @@ Exercise 2:
 - Jupyter Notebooks: [exercise repo]()
 - RStudio: [exercise repo]()
 
-- Jupyter/RStudio Upload
-  - https://github.com/UtrechtUniversity/workshop-introduction-to-python/blob/main/book/solutions/afternoon_exercises_solutions.ipynb
-  - https://github.com/UtrechtUniversity/workshop-introduction-to-R-and-data
-- ResearchDrive
-
-https://utrechtuniversity.github.io/vre-docs/docs/manuals.html#data-transfer
-
-- Conda env + git
-
-# Catalog Items
+## A closer look at Catalog Items
 
 - Requesting access
+- Components
 - Parameters
-- Interactive parameters
 
-# Exercise 3: custom CI, interactive parameters
+# A closer look at Catalog Items
 
-- Custom Packages
-
-Throw away workspace, do it again.
+Go to [exercise 3](https://github.com/UtrechtUniversity/hpc-school-vre-intro/blob/main/exercises.md#exercise-3).
 
 # Final assignment
 

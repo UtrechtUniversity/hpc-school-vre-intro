@@ -42,3 +42,95 @@ These exercises live in different repositories that also contain example code. C
 - RStudio: [exercise repo]()
 - Jupyter Notebook: [exercise repo]()
 
+# Exercise 3: customizing Catalog Items
+
+ResearchCloud gives you the ability to customize the Catalog Items (=workspace types) that you use to create workspaces. This lets you, for instance, add different Components (installation scripts) to a Catalog Item, allowing you to control what software gets installed on a workspace. Or you can tweak the *parameters* for certain Components to change their behavior.
+
+In this exercise, we will modify a simple Catalog Item to automate the installation of a virtual environment in Jupyter Notebooks. This means that your workspace will automatically contain your dependencies when it has started up, so there's no need for the kind of manual steps you performed in Exercise 2.
+
+**Note**: although the method outlined in this exercise is powerful, it is no replacement for understanding the kinds of environment and dependency managers you practiced with in Exercise 2! We primarily offer this exercise as a way of better understanding ResearchCloud.
+
+## Clone the Catalog Item
+
+You can only edit Catalog Items of which you are the owner. If you want to edit an existing Catalog Item of which you are not the owner, you'll first have to *clone* it.
+
+1. In the ResearchCloud portal, go to *Development* and then *Catalog Items*.
+2. Find the *Jupyter Notebook* item and click it.
+3. If you scroll down, you will see a *Clone* button. Click it.
+
+## Edit the Catalog Item
+
+You are now taken to a selection screen which allows you to edit your (cloned) Catalog Item.
+
+### Step 1. Select and order components.
+
+Don't change anything in this step, but observe: the Catalog Item exists of a number or (ordered) *Components*. These are installation scripts that perform various tasks, e.g:
+
+- installing the operating system, 
+- installing Jupyter
+- installing Custom Packages (! we're going to use this)
+
+For now, just press the yellow 'Continue' button.
+
+### Step 2. Name & description
+
+Change the name to something descriptive such as: '[DEV] Jupyter <firstname> <first letter of lastname>'.
+
+Press the yellow 'Continue' button.
+
+### Step 3. Owner & support
+
+Make sure the 'ITS VRE Demo' collaboration is selected as the owner for your Catalog Item. (This should be the default if you have only one collaboration.)
+
+Press the yellow 'Continue' button.
+
+### Step 4. Access
+
+**Do not make the Catalog Item visible** (default.)
+
+Press the yellow 'Continue' button.
+
+### Step 5. Cloud settings
+
+Don't change anything, but observe that you can choose which hardware is available for a workspace in your Catalog Item.
+
+Press the yellow 'Continue' button.
+
+### Step 6. Parameters
+
+This is where interesting things happen!
+
+The Catalog Item's Components have configurable settings that lets you tweak their behaviour. In this step, you see all the parameters defined by each different component. The component is listed under the "Source" column. Scroll down until you see the parameters defined by "Custom Packages":
+
+- `requirements_file_repo_url`
+- `requirements_file_path`
+- `requirements_file_tag`
+
+Together, these parameters allow you to designate a git repository that contains a file specifiying requirements for a Jupyter environment (called a kernel). These requirements will be installed on the workspace when it is created!
+
+As you can see, the default is that the following file is installed:
+
+* repository: https://gitlab.com/rsc-surf-nl/plugins/plugin-custom-packages.git
+* tag (= git branch): `main`
+* file: the file `files/sample-requirements.yml` inside this repository [link](https://gitlab.com/rsc-surf-nl/plugins/plugin-custom-packages/-/blob/main/files/sample-requirements.yml?ref_type=heads).
+
+We can override these defaults to point to our own requirements file!
+
+1. Take the `requirements_file_repo_url` parameter. In the rightmost column, change 'Keep value' to 'Overwrite'. 
+    * Fill in this URL: `https://github.com/UtrechtUniversity/src-python-example.git`
+1. Also overwrite the `requirements_file_path` parameter. Set it to: `rsc/requirements.yml`
+    * This will configure the component to install the dependencies we have outlined in [this file](https://github.com/UtrechtUniversity/src-python-example/blob/main/rsc/requirements.yml). 
+
+Now scroll down and press the yellow 'Continue' button.
+
+### Step 7. Workspace settings
+
+Don't change anything. Press the yellow 'Submit' button.
+
+### Create a workspace
+
+Time to launch a new workspace based on your new Catalog Item!
+
+If everything goes well, your workspace will be created. When you login to it, you'll see that the custom environment `geo-kernel` is available. No need to install dependencies manually!
+
+Watch out though: if you made a typo when overwriting the parameters above, it is possible that creation of your workspace will fail. That's because the Custom Packages component will then be unable to locate the necessary requirements file.
