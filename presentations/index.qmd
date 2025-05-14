@@ -165,6 +165,12 @@ Also see our [manuals](https://utrechtuniversity.github.io/vre-docs/docs/manuals
 
 ## Data transfer & reproducibility
 
+Exercise 2:
+
+- Python Workbench: [exercise repo](https://github.com/UtrechtUniversity/src-python-example/)
+- Jupyter Notebooks: [exercise repo]()
+- RStudio: [exercise repo]()
+
 - Jupyter/RStudio Upload
   - https://github.com/UtrechtUniversity/workshop-introduction-to-python/blob/main/book/solutions/afternoon_exercises_solutions.ipynb
   - https://github.com/UtrechtUniversity/workshop-introduction-to-R-and-data
