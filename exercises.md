@@ -112,7 +112,7 @@ As you can see, the default is that the following file is installed:
 
 * repository: https://gitlab.com/rsc-surf-nl/plugins/plugin-custom-packages.git
 * tag (= git branch): `main`
-* file: the file `files/sample-requirements.yml` inside this repository [link](https://gitlab.com/rsc-surf-nl/plugins/plugin-custom-packages/-/blob/main/files/sample-requirements.yml?ref_type=heads).
+* file: the file `files/sample-requirements.yml` inside the repository ([link](https://gitlab.com/rsc-surf-nl/plugins/plugin-custom-packages/-/blob/main/files/sample-requirements.yml?ref_type=heads)).
 
 We can override these defaults to point to our own requirements file!
 
