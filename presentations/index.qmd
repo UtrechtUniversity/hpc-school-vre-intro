@@ -108,7 +108,7 @@ Everyone in the same [SRAM](https://sram.surf.nl/) *Collaboration* can see and l
 
 ## Create a workspace and storage
 
-Go to [exercise 1]() and create your own storage + workspace!
+Go to [exercise 1](https://github.com/UtrechtUniversity/hpc-school-vre-intro/blob/main/exercises.md) and create your own storage + workspace!
 
 ![](images/jupyter.png)
 ![](images/rstudio.png)
@@ -128,7 +128,7 @@ Please avoid wasting credits and resources!
 
 When *not* actively using your workspace, always make sure to **pause** it.
 
-- Workspaces only cost credits when they are in *state: running*
+- Workspaces *only* cost credits when they are in *state: running*
 - Storage units *always* cost a fixed amount of credits (proportional to size)
 
 :::
