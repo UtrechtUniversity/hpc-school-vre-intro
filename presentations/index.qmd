@@ -15,7 +15,7 @@ Extended Introduction to SURF ResearchCloud
 
 ![](images/qr_sram.png)
 
-# Program
+# Morning Program
 
 - Part I: First steps
 - 10.30 Coffee break
@@ -26,59 +26,144 @@ Extended Introduction to SURF ResearchCloud
 # Links
 
 - These slides: [https://edu.nl/7xtfr](https://edu.nl/7xtfr)
+- [Exercises]()
 - [UU ResearchCloud documentation](https://utrechtuniversity.github.io/vre-docs/)
-- [SURF ResearchCloud wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/9798172/SURF+Research+Cloud)
 
-# What is ResearchCloud?
+## What is ResearchCloud?
+::: {style="text-align: left; margin-top: 2em"}
 
-Features / advantages
+On-demand cloud resources (compute & storage) in a user-friendly platform.
 
-## Different cloud resources
+- Easy collaboration in and across institutions.
+- Special applications, customizable environments.
+- Special SANE environments for sensitive data.
+- Deploy on different cloud infrastructures.
 
-Workspace
-  - transient, no permanent storage, no backup
-Storage
-  - permanent
-IP
+:::
 
-## Collaborative
+## What is ResearchCloud?
+::: {style="text-align: left; margin-top: 2em"}
 
-SRAM
+![](images/clouds.png)
 
-## Multiple infrastructures
+:::
 
-Different type of clouds
-Hardware availability
+## ResearchCloud
+::: {style="text-align: left; margin-top: 2em"}
+Run VMs (*workspaces*) preconfigured for various research needs:
+
+- Programming and analysis (e.g. R-Studio, Jupyter, Matlab).
+- Analysis tools (e.g. ASReview, 4CAT).
+- Field-specific software (e.g. GIS).
+- Webservices (e.g. Galaxy).
+- ...or simply your own desktop or commandline machine in the cloud.
+:::
+
+## What is ResearchCloud?
+::: {style="text-align: left; margin-top: 2em"}
+
+Who is it for? Those who...
+
+- need to be able to collaborate or share with others.
+- need more compute (CPU/GPU), but don't need access to a supercomputer.
+- have non-traditional HPC needs (special software).
+
+:::
+
+## Funding
+::: {style="text-align: left; margin-top: 2em"}
+Costs depend on the amount of resources you select and the cloud on which you work.
+:::
 
 ## Funding
 
-Cost model
-  - PAUSE WORKSPACES
-Funding sources (very briefly)
+::: {style="text-align: left; margin-top: 2em"}
+- Starting budget: 10.000 credits.
+  - ~10.000 CPU core hours or 50-100 GPU hours.
+- Often enough for finishing a project!
+- Or: use it as a pilot for an NWO Small grant.
+- Getting started: set up an HPC Consultancy meeting!
+  - [edu.nl/v7y7e](https://edu.nl/v7y7e)
 
-# Demo
+:::
 
-Verify that:
+## Demo
 
-- Everyone is in SRAM
-- Everyone has a wallet
-- Everyone has TOTP set up
-- Optional: if you want to use SSH, setup key
-- Everyone can login to an existing workspace
+Everyone in the same [SRAM](https://sram.surf.nl/) *Collaboration* can see and login to each other's *workspaces*.
 
-# Exercise 1: Create a workspace with Storage
+- Workspaces
+    * Different *types* (Catalog Items)
+    * Different hardware
+    * Access button
+    * Pause/resume
+    * Transient: no permanent storage!
 
-Offer 2 or 3 different workspace types
+## Login yourself!
 
-https://utrechtuniversity.github.io/vre-docs/docs/manuals/creating.html
+- Go to the [portal](https://portal.live.surfresearchcloud.nl/)
+- (Verify that you have a wallet)
+- [Setup time-based password for ResearchCloud](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/9798290/Log+in+to+your+workspace#Logintoyourworkspace-WorkspaceAccesswithTOTP)
+    * Optional: if you want to use SSH, [setup your public key](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/9798290/Log+in+to+your+workspace#Logintoyourworkspace-WorkspaceaccesswithSSH).
+- Go back to the Dashboard, and use the Access buttons to try and login to the demo workspaces!
 
-Plenary: log in to each others' workspace.
+## Create a workspace and storage
 
-Pause the workspace.
+Go to [exercise 1]() and create your own storage + workspace!
 
-# COFFEE BREAK 15 mins
+![](images/jupyter.png)
+![](images/rstudio.png)
+![](images/python_workbench.png)
 
-# Exercise 2: transfer data & reproducibility
+## Create a workspace and storage
+
+Have a cup of coffee while your workspace is being created!
+
+<img src="https://imgs.xkcd.com/comics/compiling.png" />
+
+## Using your workspace
+
+::: {style="text-align: left; margin-top: 2em"}
+
+Please avoid wasting credits and resources!
+
+When *not* actively using your workspace, always make sure to **pause** it.
+
+- Workspaces only cost credits when they are in *state: running*
+- Storage units *always* cost a fixed amount of credits (proportional to size)
+
+:::
+
+##
+
+Resource costs:
+
+![](images/costs.png){width=1in}
+
+[Cost calculator](https://utrechtuniversity.github.io/vre-docs/docs/responsible-use.html#cost-calculator)
+
+## Using your workspace
+
+- How do I get my code/data on/off the workspace?
+   * depends on the Catalog Item!
+   * ...and on where your data lives.
+- How do I make sure my results are stored on the permanent storage volume?
+- How can I reproduce my workflow on a different workspace?
+
+## Data transfer & reproducibility
+
+::: {style="text-align: left; margin-top: 2em"}
+
+ResearchDrive Demo
+
+:::
+
+::: {style="text-align: left; margin-top: 2em"}
+
+Also see our [manuals](https://utrechtuniversity.github.io/vre-docs/docs/manuals.html#data-transfer) for data transfer options.
+
+:::
+
+## Data transfer & reproducibility
 
 - Jupyter/RStudio Upload
   - https://github.com/UtrechtUniversity/workshop-introduction-to-python/blob/main/book/solutions/afternoon_exercises_solutions.ipynb
@@ -91,6 +176,7 @@ https://utrechtuniversity.github.io/vre-docs/docs/manuals.html#data-transfer
 
 # Catalog Items
 
+- Requesting access
 - Parameters
 - Interactive parameters
 
@@ -100,5 +186,6 @@ https://utrechtuniversity.github.io/vre-docs/docs/manuals.html#data-transfer
 
 Throw away workspace, do it again.
 
-# SANE demo (if time allows?)
+# Final assignment
 
+Please delete your own workspaces and storage. :-)
