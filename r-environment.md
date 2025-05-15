@@ -23,8 +23,11 @@ cd <the name of your storage volume>
 
 ### Step 3: Clone the reproducible project example
 
-The GitHub repository of the project that we are going to reproduce in this exercise can be viewed [here](https://github.com/MindTheGap-ERC/StratPal_ms_supp)
-Get the HTTPS clone url from the github repository (green button with '<> Code') . Copy the following command in the terminal of your RStudio workspace together with the clone url:
+The GitHub repository of the project that we are going to reproduce in this exercise can be viewed [here](https://github.com/MindTheGap-ERC/StratPal_ms_supp).
+
+- Get the HTTPS clone url from the github repository (green button with '<> Code') . 
+- Copy the following command in the terminal of your RStudio workspace together with the clone url:
+  
 ```
 git clone 
 ```
