@@ -119,7 +119,7 @@ We can override these defaults to point to our own requirements file!
 1. Take the `requirements_file_repo_url` parameter. In the rightmost column, change 'Keep value' to 'Overwrite'. 
     * Fill in this URL: `https://github.com/UtrechtUniversity/src-python-example.git`
 1. Also overwrite the `requirements_file_path` parameter. Set it to: `rsc/requirements.yml`
-    * This will configure the component to install the dependencies we have outlined in [this file](https://github.com/UtrechtUniversity/src-python-example/blob/main/rsc/requirements.yml). 
+1. The steps above will configure the component to install the dependencies we have outlined in [this file](https://github.com/UtrechtUniversity/src-python-example/blob/main/rsc/requirements.yml) on the workspace. 
 
 Now scroll down and press the yellow 'Continue' button.
 
@@ -131,6 +131,15 @@ Don't change anything. Press the yellow 'Submit' button.
 
 Time to launch a new workspace based on your new Catalog Item!
 
+**Watch out**: if you made a typo when overwriting the parameters above, it is possible that creation of your workspace will fail. That's because the Custom Packages component will then be unable to locate the necessary requirements file.
+
 If everything goes well, your workspace will be created. When you login to it, you'll see that the custom environment `geo-kernel` is available. No need to install dependencies manually!
 
-Watch out though: if you made a typo when overwriting the parameters above, it is possible that creation of your workspace will fail. That's because the Custom Packages component will then be unable to locate the necessary requirements file.
+If in exercise 2 you worked with the Python example, you should be able to run the Notebook from that exercise without having to install dependencies. You can test this as follows:
+
+- Select the `geo-kernel` environment
+- Open a terminal and clone the example repo: `git clone https://github.com/UtrechtUniversity/src-python-example.git`
+- Open the Notebook in `src-python-example/notebooks/Vectors.ipynb`
+- Run it!
+
+
