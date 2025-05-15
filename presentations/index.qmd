@@ -143,33 +143,70 @@ Resource costs:
 
 ## Using your workspace
 
+```{mermaid}
+flowchart TD
+    classDef std fill:#FFFF,stroke:#333,stroke-width:2px; 
+    subgraph workspace["Workspace Lifecycle"]
+    ImportData["Import Data"]
+    Create["Create workspace"]
+    ImportCode["Import Code"]
+    Run["Run analysis"]
+    Export["Export data"]
+    Delete["Delete workspace"]
+    class ImportData,Create,ImportCode,Run,Export,Delete std;
+  end
+  style workspace fill:#FEDB00,stroke:#333,stroke-width:2px;
+
+  subgraph storages["Data"]
+    Storage["ResearchCloud Storage"]
+    RD["ResearchDrive"]
+    Yoda["Yoda"]
+    MiscData["..."]
+    class Storage,RD,Yoda,MiscData std;
+  end
+  style storages fill:#f9f,stroke:#333,stroke-width:2px;
+
+  subgraph code["Code"]
+    GitRepo["Git Repo"]
+    class GitRepo std;
+  end
+  style code fill:#f9f,stroke:#333,stroke-width:2px;
+
+  Create --> ImportData --> ImportCode --> Run --> Export --> Delete & storages
+  storages --> ImportData
+  GitRepo --> ImportCode
+```
+
+## Using your workspace
+
 - How do I get my code/data on/off the workspace?
-   * depends on the Catalog Item!
-   * ...and on where your data lives.
 - How do I make sure my results are stored on the permanent storage volume?
-- How can I reproduce my workflow on a different workspace?
+- No single answer!
+  * Depends on Catalog Item
+  * ...and on where your data lives
 
 ## Data transfer & reproducibility
 
 ::: {style="text-align: left; margin-top: 2em"}
 
-ResearchDrive Demo
+Storage options:
+
+* ResearchDrive / [SURF Drive](https://surfdrive.surf.nl/)
+* [Yoda](https://www.uu.nl/en/research/yoda)
+* ResearchCloud storage (**not for archiving/long term!**)
+* ...
 
 :::
 
-::: {style="text-align: left; margin-top: 2em"}
-
-Also see our [manuals](https://utrechtuniversity.github.io/vre-docs/docs/manuals.html#data-transfer) for data transfer options.
-
-:::
+See our [manuals](https://utrechtuniversity.github.io/vre-docs/docs/manuals.html#data-transfer) for data transfer options.
 
 ## Data transfer & reproducibility
 
 Exercise 2:
 
 - Python Workbench: [exercise repo](https://github.com/UtrechtUniversity/src-python-example/)
-- Jupyter Notebooks: [exercise repo]()
-- RStudio: [exercise repo]()
+- Jupyter Notebooks: [exercise repo](https://github.com/UtrechtUniversity/src-python-example/)
+- RStudio: [exercise](r-environment.md)
 
 ## A closer look at Catalog Items
 
@@ -177,7 +214,7 @@ Exercise 2:
 - Components
 - Parameters
 
-# A closer look at Catalog Items
+## A closer look at Catalog Items
 
 Go to [exercise 3](https://github.com/UtrechtUniversity/hpc-school-vre-intro/blob/main/exercises.md#exercise-3).
 
