@@ -36,6 +36,8 @@ Now create your workspace! Follow the steps in the [documentation](https://utrec
 
 # Exercise 2: reproducible environments
 
+Working with reproducible environments makes your life easier and your project more robust and reproducible. There are many advantages for working with environments, but if we just focus on SURF Research cloud: the benefit of working with GitHub and an environment manager for Python or R is that you can setup your project with all its dependencies with very little effort. This makes it easier to delete workspaces and start new ones in case of problems, or because the [maximum recommended lifetime of 4 weeks](https://utrechtuniversity.github.io/vre-docs/docs/responsible-use.html#vre-lifetime-and-security-updates) has been reached. If you would like to learn more about setting up a reproducible project, the workshop [Best Practices for Writing Reproducible code](https://www.uu.nl/en/research/research-data-management/training-workshops/best-practices-for-writing-reproducible-code) might be interesting for you.
+
 These exercises live in different repositories that also contain example code. Choose the one that corresponds to the catalog item you created above:
 
 - Python Workbench: [exercise repo](https://github.com/UtrechtUniversity/src-python-example/)
