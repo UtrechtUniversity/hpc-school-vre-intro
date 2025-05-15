@@ -19,28 +19,13 @@ cd <the name of your storage volume>
 
 ### Step 3: Clone the reproducible project example
 
-The GitHub repository of the project that we are going to reproduce in this exercise can be viewed [here](https://github.com/bu-ma415/reproducibility-example)
-Copy the following command in the terminal of your RStudio workspace:
+The GitHub repository of the project that we are going to reproduce in this exercise can be viewed [here](https://github.com/MindTheGap-ERC/StratPal_ms_supp)
+Get the HTTPS clone url from the github repository (green button with '<> Code') . Copy the following command in the terminal of your RStudio workspace together with the clone url:
 ```
 git clone 
 ```
 
-### Step 4: Open the R project file
-In the file navigator in Rstudio (bottom right panel), navigate to the cloned repository (data > storage > cloned project folder) and click the project file.
+### Step 4: Create R environment and run the code
 
-### Step 5: Install `renv`
-
-Open the R console window (bottom left panel) and type:
-```
-install.packages('renv')
-```
-
-### Step 6: Use `renv` to install packages from `renv.lock` file
-
-```
-renv::restore()
-```
-
-### Step 7: Now open the R script and run file
-
+Follow the 'Usage' instructions from the [README](https://github.com/MindTheGap-ERC/StratPal_ms_supp) of the project on GitHub.
 
