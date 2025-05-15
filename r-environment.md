@@ -37,6 +37,9 @@ Follow the 'Usage' instructions from the [README](https://github.com/MindTheGap-
 
 The script in this project is executed very fast. Imagine that you have a script that takes hours to run. While it should be able to do this exactly as described above, the more robust and recommended way is to run such a script as a 'background job' with `nohup`. Find instructions on how to do this in [Method 2 in this manual](https://utrechtuniversity.github.io/vre-docs/docs/manuals/long-jobs.html#method-2-using-nohup).
 
+### (Optional) Step 6: Transfer your output data to cloud storage directly
+If you have a [Surfdrive](surfdrive.surf.nl)-, Researchdrive- of Yoda account, you can transfer your output data there directly. Use the [manuals on our documentation website](https://utrechtuniversity.github.io/vre-docs/docs/manuals.html) to transfer your data there directly. 
+> In theory this is also possible for OneDrive but this is not straightforward because you need web browser to login to Onedrive. The easiest way is to download data to your laptop first and then upload it to Onedrive.
 
 
 
