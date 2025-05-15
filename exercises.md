@@ -40,7 +40,7 @@ These exercises live in different repositories that also contain example code. C
 
 - Python Workbench: [exercise repo](https://github.com/UtrechtUniversity/src-python-example/)
 - RStudio: [exercise](r-environment.md)
-- Jupyter Notebook: [exercise repo]()
+- Jupyter Notebook: [exercise repo](https://github.com/UtrechtUniversity/src-python-example/blob/main/README.md#scenario-2-workspace-jupyter-notebook)
 
 # Exercise 3: customizing Catalog Items
 
