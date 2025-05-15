@@ -214,6 +214,8 @@ Exercise 2:
 - Components
 - Parameters
 
+See our [Catalog Item documentation](https://utrechtuniversity.github.io/vre-docs/docs/workspace-catalogue.html).
+
 ## A closer look at Catalog Items
 
 Go to [exercise 3](https://github.com/UtrechtUniversity/hpc-school-vre-intro/blob/main/exercises.md#exercise-3).
