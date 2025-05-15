@@ -1,5 +1,5 @@
 ## RStudio:
-The steps below assuming that you have created an RStudio workspace in exercise 1 and are logged in to it.
+The steps below assuming that you have created an RStudio workspace in [exercise 1](./exercises.md#exercise-1) and are logged in to it.
 
 ### Step 1: Open the 'terminal' window
 In the bottom left panel, click the ‘terminal’ tab.
