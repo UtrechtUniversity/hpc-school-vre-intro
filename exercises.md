@@ -39,7 +39,7 @@ Now create your workspace! Follow the steps in the [documentation](https://utrec
 These exercises live in different repositories that also contain example code. Choose the one that corresponds to the catalog item you created above:
 
 - Python Workbench: [exercise repo](https://github.com/UtrechtUniversity/src-python-example/)
-- RStudio: [exercise repo]()
+- RStudio: [exercise](r-environment.md)
 - Jupyter Notebook: [exercise repo]()
 
 # Exercise 3: customizing Catalog Items
