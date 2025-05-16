@@ -26,7 +26,8 @@ Extended Introduction to SURF ResearchCloud
 # Links
 
 - These slides: [https://edu.nl/7xtfr](https://edu.nl/7xtfr)
-- [Exercises]()
+- [ResearchCloud Portal](https://portal.live.surfresearchcloud.nl/)
+- [Exercises](https://github.com/UtrechtUniversity/hpc-school-vre-intro/blob/main/exercises.md)
 - [UU ResearchCloud documentation](https://utrechtuniversity.github.io/vre-docs/)
 
 ## What is ResearchCloud?
