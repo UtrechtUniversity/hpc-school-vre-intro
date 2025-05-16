@@ -23,7 +23,9 @@ cd <the name of your storage volume>
 
 ### Step 3: Clone the reproducible project example
 
-The GitHub repository of the project that we are going to reproduce in this exercise can be viewed [here](https://github.com/MindTheGap-ERC/StratPal_ms_supp).
+The GitHub repository of the project that we are going to reproduce in this exercise is developed by Niklas Hohmann and can be viewed [here](https://github.com/MindTheGap-ERC/StratPal_ms_supp).
+
+Credits: Hohmann, N. (2025). Supplementary code for the manuscript "StratPal: An R package for creating stratigraphic paleobiology modeling pipelines" (v1.0.1). Zenodo. [https://doi.org/10.5281/zenodo.14669896](https://doi.org/10.5281/zenodo.14669896)
 
 - Get the HTTPS clone url from the github repository (green button with '<> Code') . 
 - Copy the following command in the terminal of your RStudio workspace together with the clone url:
@@ -43,6 +45,8 @@ The script in this project is executed very fast. Imagine that you have a script
 ### (Optional) Step 6: Transfer your output data to cloud storage directly
 If you have a [Surfdrive](surfdrive.surf.nl)-, Researchdrive- of Yoda account, you can transfer your output data there directly. Use the [manuals on our documentation website](https://utrechtuniversity.github.io/vre-docs/docs/manuals.html) to transfer your data there directly. 
 > In theory this is also possible for OneDrive but this is not straightforward because you need web browser to login to Onedrive. The easiest way is to download data to your laptop first and then upload it to Onedrive.
+
+
 
 
 
